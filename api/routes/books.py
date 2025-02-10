@@ -1,4 +1,3 @@
-from http.client import HTTPException
 from typing import OrderedDict
 
 from fastapi import APIRouter, status
@@ -55,7 +54,7 @@ async def get_book(book_id: int) -> Book:
     if book is None:
          return JSONResponse(
         status_code=status.HTTP_404_NOT_FOUND,
-        content={"detail": "Book not foundddd"},
+        content={"detail": "Book not found"},
     )
     return book
 
