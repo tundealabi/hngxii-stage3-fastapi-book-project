@@ -129,6 +129,10 @@ The API includes proper error handling for:
 - Invalid genre types
 - Malformed requests
 
+## Deployment
+
+The API is currently deployed on an AWS EC2 instance (ubuntu t2.micro) alongside an NGINX service which is used to proxy request to the FAST API server. The CI/CD to update the app is triggered whenever a push is made to the main branch.
+
 ## Contributing
 
 1. Fork the repository
